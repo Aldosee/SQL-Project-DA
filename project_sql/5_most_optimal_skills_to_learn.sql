@@ -1,4 +1,4 @@
-/* WHat are the most optimal skill to learn (high demand and high-paying)
+/* What are the most optimal skill to learn (high demand and high-paying)
 -What skills in high demand with high average salary for DA
 -Focus in remote positions with salaries
 --Why? It target skills that offer job security (high demand) and financial benefits (high salary)
