@@ -19,7 +19,7 @@ Driven by a passion for continuous skill improvement and a desire to test  abili
  - PostgreSQL: Database management system.
  - Visual Studio Code: Database managemnt and executing SQL queries.
  - Git & GitHub: Version control and share SQL scripts and analysis. Project tracking of updates.
- - PowerBI: Data visualization and to give a comprehensive of the data analysis.
+ - PowerBI: Data visualization and to give a comprehensive insight of the data analysis.
 
  ## 🔎 Analysis
 
