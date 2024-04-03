@@ -55,6 +55,3 @@ ORDER BY
 LIMIT 10
 
 
---PROJECT 2
---Why the salary is so high, probably because of the in demand skill requisite?
-
