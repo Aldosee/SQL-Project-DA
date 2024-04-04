@@ -10,7 +10,7 @@ Driven by a passion for continuous skill improvement and a desire to test  abili
 
 1. What are the top-paying data analyst jobs?
 2. What skills required for top-paying jobs?
-3. What skills neede for in demand data analyst roles?
+3. What skills needed for in demand data analyst roles?
 4. Which skills with high salaries?
 5. What are the most optimal skills to learn?
 
