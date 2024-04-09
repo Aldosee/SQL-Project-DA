@@ -21,9 +21,10 @@ SELECT
     job_posted_date
 FROM
     job_postings_fact
-WHERE salary_year_avg IS NOT NULL AND
-        job_work_from_home = 'TRUE' AND
-        job_title_short LIKE 'Data Analyst'
+WHERE 
+    salary_year_avg IS NOT NULL AND
+    job_work_from_home = 'TRUE' AND
+    job_title_short LIKE 'Data Analyst'
 ORDER BY 
     salary_year_avg DESC
 LIMIT 10;

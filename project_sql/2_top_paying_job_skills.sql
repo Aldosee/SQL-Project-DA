@@ -14,7 +14,7 @@ WITH top_10_job AS (
     FROM
         job_postings_fact
     LEFT JOIN
-        company_dim ON job_postings_fact.company_id =company_dim.company_id 
+        company_dim ON job_postings_fact.company_id=company_dim.company_id 
     WHERE
         salary_year_avg IS NOT NULL AND
         job_work_from_home = 'TRUE' AND
@@ -24,16 +24,17 @@ WITH top_10_job AS (
     LIMIT 10
 )
 
-SELECT  
-   top_10_job.*,
-   skills
-FROM top_10_job
+    SELECT  
+        top_10_job.*,
+        skills
+    FROM 
+        top_10_job
     INNER JOIN 
-    skills_job_dim ON top_10_job.job_id = skills_job_dim.job_id
+        skills_job_dim ON top_10_job.job_id = skills_job_dim.job_id
     INNER JOIN 
-    skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
-ORDER BY
-    salary_year_avg DESC
+        skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
+    ORDER BY
+        salary_year_avg DESC;
 
 /*The result of this query showed a breakdown of the most demand skill for data analyst in 2023, based on the job posting: (Use MS excel to PIVOT the analysis)
 Being at top is SQL with a count of 8

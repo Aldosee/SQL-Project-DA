@@ -51,7 +51,8 @@ WITH skills_demand AS (
         avg_salary
     FROM
         skills_demand
-    INNER JOIN average_salary ON skills_demand.skill_id = average_salary.skill_id
+    INNER JOIN 
+        average_salary ON skills_demand.skill_id = average_salary.skill_id
     WHERE 
         demand_skill_count > '10'
     ORDER BY
