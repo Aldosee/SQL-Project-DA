@@ -23,7 +23,6 @@ Driven by a passion for continuous skill improvement and a desire to test  abili
 
  ## 🔎 Analysis
 
-The project aims to answer the queries of data analyst job market. This 
 
 ### 1. Top Paying Data Analyst Jobs
 
