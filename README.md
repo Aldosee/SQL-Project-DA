@@ -58,7 +58,7 @@ The top-paying data analyst jobs based on the provided dataset, include a Data A
 ![Top Paying DA roles](<assets/Top Paying Data.png>)
 
 
-### 2. Skills required for Top Paying jobs?
+### 2. Skills required for Top Paying jobs
 To identify the skills needed for top paying job in the market. I joined job postings tables, company table, and skill job table. The query showed the companies high salary with corresponding skills needed.
 
 ```
