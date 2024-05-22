@@ -4,29 +4,29 @@ Hello!  This project aims to analyze factors such as industry demand, skill requ
 
 
 ## 📖 Background
-Driven by a passion for continuous skill improvement and a desire to test  abilities in data analysis, this project aims to delve deep into the job market within the field. By leveraging cutting-edge analytical tools and methodologies, this seek not only to identify trends but also to enhance my own proficiency in data analysis. 
+Driven by a passion for continuous skill improvement and a desire to test  abilities in data analysis, this project aims to delve deep into the job market within the field. By leveraging cutting-edge analytical tools and methodologies, I seek not only to identify trends but also to enhance my proficiency in data analysis. 
 
 ### 🤔💭 Questions for this analysis using SQL queries:
 
 1. What are the top-paying data analyst jobs?
-2. What skills required for top-paying jobs?
-3. What skills needed for in-demand data analyst roles?
+2. What skills are required for top-paying jobs?
+3. What skills are needed for in-demand data analyst roles?
 4. Which skills with high salaries?
 5. What are the most optimal skills to learn?
 
 ## 🛠️ Tools
 - SQL: For analysis and query database to answer the questions.
  - PostgreSQL: Database management system.
- - Visual Studio Code: Database managemnt and executing SQL queries.
+ - Visual Studio Code: Database management and executing SQL queries.
  - Git & GitHub: SQL scripts and analysis. Project tracking of updates.
- - Canva: Visualization and to give a comprehensive insight of the data analysis.
+ - Canva: Visualization and give a comprehensive insight into the data analysis.
 
  ## 🔎 Analysis
 
 
 ### 1. Top Paying Data Analyst Jobs
 
-In this query, identify highest-paying data analyst job by filtering with the "WHERE" clause. Include remote positions and order them by salary to recognize the high paying salary. Then, return only the top 10 values using "LIMIT". 
+In this query, identify the highest-paying data analyst job by filtering with the "WHERE" clause. Include remote positions and order them by salary to recognize the high-paying salary. Then, return only the top 10 values using "LIMIT". 
 
 ```
 SELECT *
@@ -54,13 +54,13 @@ LIMIT 10;
 
 ```
 #### The result:
-The top-paying data analyst jobs based on the provided dataset, include a Data Analyst position at Mantys with a average salary of $650,000 per year, followed by a Director of Analytics role at Meta with a average salary of $336,500 per year, and an Associate Director-Data Insights position at AT&T with a average salary of $255,829.5 per year.
+The top-paying data analyst jobs based on the provided dataset, include a Data Analyst position at Mantys with an average salary of $650,000 per year, followed by a Director of Analytics role at Meta with an average salary of $336,500 per year, and an Associate Director-Data Insights position at AT&T with an average salary of $255,829.5 per year.
 
 ![Top Paying DA roles](<assets/Top Paying Data.png>)
 
 
 ### 2. Skills required for Top Paying jobs
-To identify the skills needed for top paying job in the market. I joined job postings tables, company table, and skill job table. The query showed the companies high salary with corresponding skills needed.
+To identify the skills needed for top-paying jobs in the market. I joined job posting tables, company tables, and skill job tables. The query showed the company's high salary with the corresponding skills needed.
 
 ```
 WITH top_10_job AS (
@@ -97,7 +97,7 @@ WITH top_10_job AS (
         salary_year_avg DESC;
  ```
  #### The result:
-The table summarizes data analyst job positions from multiple companies offering full-time schedules with remote work and salaries ranging from $184,000 to $255,829.5 annually and the common  skills required such as SQL, Python, R, Tableau, and Excel. AT&T the topped highest salary varying different skills for Data Analyst.
+The table summarizes data analyst job positions from multiple companies offering full-time schedules with remote work and salaries ranging from $184,000 to $255,829.5 annually and the common  skills required such as SQL, Python, R, Tableau, and Excel. AT&T has the highest salary varying different skills for Data Analyst.
 
 
 
@@ -114,8 +114,8 @@ The table summarizes data analyst job positions from multiple companies offering
 
 
 
-### 3. In demand skills for Data Analyst
-To identify the skills in demand for the role as a Data Analyst. I joined the table job posting, skill job, and skill to arrive the top 5 skills in demand.
+### 3. In-demand skills for Data Analyst
+To identify the skills in demand for the role of a Data Analyst. I joined the table job posting, skill job, and skill to arrive at the top 5 skills in demand.
 ```
 SELECT 
     skills,
@@ -138,13 +138,13 @@ LIMIT
 ```
 
  #### The result:
-The vizualisation showed the demand skills for Data Analyst with SQL being the most in-demand skill, followed by Excel, Python, Tableau, and Power BI. These findings indicate a strong reliance on database querying and management skills (SQL), data analysis and visualization capabilities (Excel, Python, Tableau), and business intelligence tools (Power BI) in various industries.
+The visualization showed the demand skills for Data analysts with SQL being the most in-demand skill, followed by Excel, Python, Tableau, and Power BI. These findings indicate a strong reliance on database querying and management skills (SQL), data analysis and visualization capabilities (Excel, Python, Tableau), and business intelligence tools (Power BI) in various industries.
 
 
 ![In Demand Skill DA](<assets/In Demand Skill.png>)
 
-### 4. Skills based on Salary
-Average Salary associated with different skills showed what skills are highest paying.
+### 4. Skills Based on Salary
+The average salary associated with different skills showed what skills are the highest paying.
 
 ```
 SELECT 
@@ -217,7 +217,7 @@ Collaboration & Cloud:
 
 
 ### 5. Optimal skill to learn 
-From the demand skill and salary, this query aimed to identify what skills are high demand at the same time high salary. This will highlight what skills need to have or improve.
+From the demand skill and salary, this query aimed to identify what skills are in high demand at the same time high salary. This will highlight what skills need to be improved.
 
 ```
 WITH skills_demand AS (
@@ -276,16 +276,16 @@ WITH skills_demand AS (
 ```
  #### The result:
 - #### High-Demand Programming Languages:
-Python and R are high demand counts of 236 and 148. Average salaries of these are around $101,397 for Python and $100,499 for R. The proficiency of these languages is highly valued and widely used.
+Python and R are high-demand counts of 236 and 148. Average salaries of these are around $101,397 for Python and $100,499 for R. The proficiency of these languages is highly valued and widely used.
 
 - #### Database:
 Databases like Oracle, SQL Server, NoSQL with average salaries ranging from $97,786 to $104,534. These tools store, manage, and retrieve structured and unstructured data. These databases serve as repositories for various types of data, ranging from traditional relational data to semi-structured and unstructured data formats. 
 
 - #### Cloud Tools:
-Snowflake, Azure, AWS, and BigQuery are in demand with high average salary. These cloud platform and cloud tools are crucial for data analysts as they provide scalable infrastructure, storage, and computational resources, enabling efficient data processing, analysis, and collaboration. 
+Snowflake, Azure, AWS, and BigQuery are in demand with high average salaries. These cloud platforms and cloud tools are crucial for data analysts as they provide scalable infrastructure, storage, and computational resources, enabling efficient data processing, analysis, and collaboration. 
 
-- #### Business Intelligence and Visualizaiton:
-Tableau, Looker and PowerBI with a demand count of 230, 49, and 110 with a average salary around $99,288 to $103,795 These visualization tools can provide insights and add value to decision makers.
+- #### Business Intelligence and Visualization:
+Tableau, Looker, and PowerBI with a demand count of 230, 49, and 110 with an average salary of around $99,288 to $103,795 These visualization tools can provide insights and add value to decision-makers.
 
 
 | Skill ID | Skills       | Demand Skill Count | Average Salary |
@@ -322,31 +322,31 @@ Tableau, Looker and PowerBI with a demand count of 230, 49, and 110 with a avera
 
 1. Top-paying data analyst jobs
 
-    - Based on the query, the highest paying job is $650,000 
+    - Based on the query, the highest-paying job is $650,000 
 2. Skills required for top-paying jobs
 
     - For high-paying positions, the data indicates that SQL proficiency is a key requirement. However, it's essential to note that candidates are expected to possess advanced and proficient skills in SQL along with substantial experience in utilizing the language effectively.
 
-3. skills needed for in-demand data analyst roles
+3. Skills needed for in-demand data analyst roles
 
-    - SQL topped most demanded skill.
+    - SQL topped the most demanded skill.
 
 4. Skills with high salaries
 
-    - Proficiency in statistical analysis and programming languages like Python and R. Highly skilled and niche expertise with proven track record. Data visualization skills using tools and familiarity with machine learning and big data technologies is important. 
+    - Proficiency in statistical analysis and programming languages like Python and R. Highly skilled and niche expertise with a proven track record. Data visualization skills using tools and familiarity with machine learning and big data technologies are important. 
 
 5. Most optimal skills to learn
 
-    - SQL leads in demand and offers high average salary which is considered as the most optimal skill for data analyst. However,  learning more programming language and tools will be an edge for your career development. 
+    - SQL leads in demand and offers a high average salary which is considered as the most optimal skill for data analyst. However,  learning more programming languages and tools will be an edge for your career development. 
 
  ## ✅  Takeaways
-This project has upskill my foundation in SQL and uncover tools that will help my journey as a data analyst. 
+This project has upskilled my foundation in SQL and uncover tools that will help my journey as a data analyst. 
 
 -   SQL Queries: Understand the use of Common Table Expression and utilize its importance for complex data queries.
 -   Aggregate Function: A powerful tool for query and allow me to perform calculation and analysis.
-- SQL JOINS: Another powerful to combine data or rows from two or more tables based on a common field. For me this is also a good combo for CTE.
-- Analysis: Answer the questions by using proper syntax and arrive to the desired query. With the query, it unravel a big picture to make informed decisions and actionable insights.
+- SQL JOINS: Another powerful to combine data or rows from two or more tables based on a common field. For me, this is also a good combo for CTE.
+- Analysis: Answer the questions by using proper syntax and arrive at the desired query. With the query, it unravels a big picture to make informed decisions and actionable insights.
 
-📍 I am still a novice and trying my best to grasp the knowledge in becoming a data analyst. I continue to grow by learning tools and venture more in this field. Thank you for taking the time to read my work and I would like to dedicate this to Mr. Luke for his expertise. I really learned a lot from him. 
+📍 I am still a novice and trying my best to grasp the knowledge in becoming a data analyst. I continue to grow by learning tools and venturing more in this field. Thank you for taking the time to read my work and I would like to dedicate this to Mr. Luke for his expertise. I learned a lot from him. 
 
 💻 You can check him here: https://www.youtube.com/@LukeBarousse
