@@ -28,7 +28,8 @@ Driven by a passion for continuous skill improvement and a desire to test  abili
 
 In this query, identify highest-paying data analyst job by filtering with the "WHERE" clause. Include remote positions and order them by salary to recognize the high paying salary. Then, return only the top 10 values using "LIMIT". 
 
-```SELECT *
+```
+SELECT *
 FROM job_postings_fact
 LIMIT 10;
 
