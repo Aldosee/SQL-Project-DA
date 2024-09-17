@@ -347,6 +347,6 @@ This project has upskilled my foundation in SQL and uncover tools that will help
 - SQL JOINS: Another powerful to combine data or rows from two or more tables based on a common field. For me, this is also a good combo for CTE.
 - Analysis: Answer the questions by using proper syntax and arrive at the desired query. With the query, it unravels a big picture to make informed decisions and actionable insights.
 
-📍 I am still a novice and trying my best to grasp the knowledge in becoming a data analyst. I continue to grow by learning tools and venturing more in this field. Thank you for taking the time to read my work and I would like to dedicate this to Mr. Luke for his expertise. I learned a lot from him. 
+📍 I am still a novice and trying my best to grasp the knowledge in becoming a data analyst. I continue to grow by learning tools and exploring more in this field. Thank you for taking the time to read my work and I would like to dedicate this to Mr. Luke for his expertise. I learned a lot from him. 
 
 💻 You can check him here: https://www.youtube.com/@LukeBarousse
